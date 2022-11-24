@@ -1,0 +1,18 @@
+FileVersion = 1
+
+[Project]
+Name = "FFmpeg"
+TargetType = "BeefLib"
+StartupObject = "FFmpeg.Program"
+
+[Configs.Debug.Win64]
+PreBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/Win64/*.dll\")"]
+
+[Configs.Release.Win64]
+PreBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/Win64/*.dll\")"]
+
+[Configs.Paranoid.Win64]
+PreBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/Win64/*.dll\")"]
+
+[Configs.Test.Win64]
+PreBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/Win64/*.dll\")"]
